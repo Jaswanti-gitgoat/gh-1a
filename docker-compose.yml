@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    environment:
+      DB_PASSWORD: hardcoded_postgres_pass_gh-1a_2024
+      REDIS_PASSWORD: redis_pass_hardcoded_gh-1a_xyz
+      AWS_ACCESS_KEY_ID: AKIAIOSFODNN7EXAMPLE
+      AWS_SECRET_ACCESS_KEY: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+      STRIPE_SECRET_KEY: sk_live_51H_hardcoded_gh-1a_1234567890
+      GITHUB_TOKEN: ghp_ExampleGitHubPAT_gh-1a_hardcoded123
+      SENDGRID_API_KEY: SG.hardcoded_gh-1a.ABCDEFGHIJKLMNOPQRST
+      TWILIO_AUTH_TOKEN: twilio_auth_hardcoded_gh-1a_xyz987
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_PASSWORD: postgres_root_pass_hardcoded_2024
+      POSTGRES_USER: admin
+  redis:
+    image: redis:7
+    command: redis-server --requirepass redis_hardcoded_pass_2024
