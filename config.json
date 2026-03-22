@@ -1,0 +1,26 @@
+{
+  "app": { "name": "gh-1a", "env": "production", "branch": "feature/app-config" },
+  "database": {
+    "host": "prod-db.internal",
+    "password": "db_hardcoded_pass_gh-1a_EXAMPLE123",
+    "connectionString": "postgres://root:rootPass_gh-1a@prod-db.internal/appdb"
+  },
+  "auth": {
+    "jwtSecret": "jwt_hardcoded_secret_gh-1a_1234567890ABCDEF",
+    "apiKey": "api_key_hardcoded_gh-1a_ABCDEFGHIJKLMNOP",
+    "adminToken": "admin_token_hardcoded_gh-1a_9876543210"
+  },
+  "aws": {
+    "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+    "secretAccessKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+    "region": "us-east-1"
+  },
+  "thirdParty": {
+    "stripeSecretKey": "sk_live_hardcoded_gh-1a_1234567890abcdef",
+    "sendgridApiKey": "SG.hardcoded_gh-1a.ABCDEFGHIJKLMNOPQRST",
+    "twilioToken": "twilio_hardcoded_gh-1a_EXAMPLE123456",
+    "googleApiKey": "AIzaSyExampleGoogleApiKey_gh-1a",
+    "slackBotToken": "xoxb-1234567890-SlackBotToken_gh-1a",
+    "azureClientSecret": "AzureClientSecret_Hardcoded_gh-1a_123"
+  }
+}
