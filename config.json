@@ -1,5 +1,5 @@
 {
-  "app": { "name": "gh-1a", "env": "production", "branch": "main" },
+  "app": { "name": "gh-1a", "env": "production", "branch": "feature/app-config" },
   "database": {
     "host": "prod-db.internal",
     "password": "db_hardcoded_pass_gh-1a_EXAMPLE123",
